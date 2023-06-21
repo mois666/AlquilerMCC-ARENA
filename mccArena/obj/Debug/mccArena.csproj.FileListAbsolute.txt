@@ -1,0 +1,11 @@
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\bin\Debug\mccArena.exe.config
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\bin\Debug\mccArena.exe
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\bin\Debug\mccArena.pdb
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.AssemblyReference.cache
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.SuggestedBindingRedirects.cache
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Properties.Resources.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.GenerateResource.cache
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.CoreCompileInputs.cache
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.exe
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.pdb
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.principal.resources
