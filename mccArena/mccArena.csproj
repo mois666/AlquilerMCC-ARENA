@@ -60,11 +60,29 @@
     <Compile Include="UserControls\IniciarSesionUserControl.Designer.cs">
       <DependentUpon>IniciarSesionUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ListaHorioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListaHorioUserControl.Designer.cs">
+      <DependentUpon>ListaHorioUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NuevoHorarioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NuevoHorarioUserControl.Designer.cs">
+      <DependentUpon>NuevoHorarioUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\PrinciaplUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\PrinciaplUserControl.Designer.cs">
       <DependentUpon>PrinciaplUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RegistroUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RegistroUserControl.Designer.cs">
+      <DependentUpon>RegistroUserControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -81,8 +99,17 @@
     <EmbeddedResource Include="UserControls\IniciarSesionUserControl.resx">
       <DependentUpon>IniciarSesionUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ListaHorioUserControl.resx">
+      <DependentUpon>ListaHorioUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NuevoHorarioUserControl.resx">
+      <DependentUpon>NuevoHorarioUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PrinciaplUserControl.resx">
       <DependentUpon>PrinciaplUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RegistroUserControl.resx">
+      <DependentUpon>RegistroUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

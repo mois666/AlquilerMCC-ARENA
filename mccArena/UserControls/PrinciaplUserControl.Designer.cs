@@ -54,7 +54,7 @@
             this.dgvHorasDisponibles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.no,
             this.horasDisponibles});
-            this.dgvHorasDisponibles.Location = new System.Drawing.Point(23, 40);
+            this.dgvHorasDisponibles.Location = new System.Drawing.Point(23, 42);
             this.dgvHorasDisponibles.Name = "dgvHorasDisponibles";
             this.dgvHorasDisponibles.ReadOnly = true;
             this.dgvHorasDisponibles.Size = new System.Drawing.Size(721, 323);

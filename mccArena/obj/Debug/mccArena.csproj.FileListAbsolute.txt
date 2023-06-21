@@ -9,3 +9,8 @@ D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.exe
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.pdb
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.principal.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.IniciarSesionUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.ListaHorioUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.NuevoHorarioUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.PrinciaplUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectroReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.RegistroUserControl.resources
