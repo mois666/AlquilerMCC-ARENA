@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mccArena
+namespace mccArena.UserControls
 {
-    public partial class principal : Form
+    public partial class Principal : Form
     {
-        public principal()
+        public Principal()
         {
             InitializeComponent();
         }
