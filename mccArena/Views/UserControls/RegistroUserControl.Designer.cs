@@ -36,9 +36,10 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCancelar.Location = new System.Drawing.Point(254, 303);
+            this.btnCancelar.Location = new System.Drawing.Point(381, 420);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(132, 33);
+            this.btnCancelar.Size = new System.Drawing.Size(198, 46);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -47,21 +48,24 @@
             // 
             this.btnReservar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnReservar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnReservar.Location = new System.Drawing.Point(432, 303);
+            this.btnReservar.Location = new System.Drawing.Point(648, 420);
+            this.btnReservar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReservar.Name = "btnReservar";
-            this.btnReservar.Size = new System.Drawing.Size(132, 33);
+            this.btnReservar.Size = new System.Drawing.Size(198, 46);
             this.btnReservar.TabIndex = 7;
             this.btnReservar.Text = "Reservar";
             this.btnReservar.UseVisualStyleBackColor = false;
             // 
             // RegistroUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnReservar);
             this.Controls.Add(this.btnCancelar);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegistroUserControl";
-            this.Size = new System.Drawing.Size(767, 374);
+            this.Size = new System.Drawing.Size(992, 630);
             this.ResumeLayout(false);
 
         }

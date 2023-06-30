@@ -1,6 +1,6 @@
 ﻿namespace mccArena.Views.UserControls
 {
-    partial class ClienteUserControl
+    partial class UsuarioUserControl
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -34,20 +34,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(292, 91);
+            this.label1.Location = new System.Drawing.Point(130, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 18);
+            this.label1.Size = new System.Drawing.Size(65, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "clientes";
+            this.label1.Text = "usuarios";
             // 
-            // ClienteUserControl
+            // UsuarioUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "ClienteUserControl";
+            this.Name = "UsuarioUserControl";
             this.Size = new System.Drawing.Size(992, 630);
             this.ResumeLayout(false);
             this.PerformLayout();

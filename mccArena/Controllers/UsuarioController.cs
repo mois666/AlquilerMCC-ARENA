@@ -2,6 +2,7 @@
 using mccArena.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace mccArena.Controllers
     public class UsuarioController
     {
         ModelCancha _context = new ModelCancha();
-        public List<Usuario> GetUsuarios()
+        /*public List<Usuario> GetUsuarios()
         {
             return _context.Usuario.ToList();
 
@@ -26,5 +27,22 @@ namespace mccArena.Controllers
                 return GetUsuarios();//_context.Usuario.Where(u => u.Par == par).ToList();)
             }
         }
+        public bool Create(Usuario. usuario)
+        {
+            UserControls item = _context.Usuario.Add(user);
+            return _context.SaveChanges() > 0;
+
+        }
+        public bool Update(Usuario usuario)
+        {
+            _context.Usuario.Attach(usuario);
+            _context.Entry(usuario).State = EntityState.Modified
+            return _context.SaveChanges() > 0;
+        }
+        public bool Delete(Usuario usuario)
+        {
+            _context.Usuario.Remove(user);
+            return _context.SaveChanges() > 0;
+        }*/
     }
 }

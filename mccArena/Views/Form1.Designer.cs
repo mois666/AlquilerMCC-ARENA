@@ -29,43 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlHeader = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.btnEntrar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.pnlSideBar = new System.Windows.Forms.Panel();
+            this.pnlBody = new System.Windows.Forms.Panel();
+            this.btnAbrirIniciarSesion = new System.Windows.Forms.Button();
+            this.btnPrincipal = new System.Windows.Forms.Button();
+            this.btnUsuario = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnReserva = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.pnlActive = new System.Windows.Forms.Panel();
+            this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlSideBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlHeader
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 43);
-            this.panel1.TabIndex = 2;
+            this.pnlHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pnlHeader.Controls.Add(this.btnAbrirIniciarSesion);
+            this.pnlHeader.Controls.Add(this.dateTimePicker1);
+            this.pnlHeader.Controls.Add(this.label2);
+            this.pnlHeader.Controls.Add(this.pictureBox1);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(1184, 31);
+            this.pnlHeader.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 11);
+            this.dateTimePicker1.Location = new System.Drawing.Point(9, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(289, 22);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // label2
@@ -73,8 +78,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(335, 9);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(540, 5);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 25);
             this.label2.TabIndex = 2;
@@ -84,129 +89,167 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(707, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1049, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // pnlSideBar
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtClave);
-            this.panel2.Controls.Add(this.txtUsuario);
-            this.panel2.Controls.Add(this.btnEntrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(767, 374);
-            this.panel2.TabIndex = 3;
+            this.pnlSideBar.BackColor = System.Drawing.Color.DarkRed;
+            this.pnlSideBar.Controls.Add(this.pnlActive);
+            this.pnlSideBar.Controls.Add(this.btnSalir);
+            this.pnlSideBar.Controls.Add(this.btnReporte);
+            this.pnlSideBar.Controls.Add(this.btnReserva);
+            this.pnlSideBar.Controls.Add(this.button3);
+            this.pnlSideBar.Controls.Add(this.button2);
+            this.pnlSideBar.Controls.Add(this.btnUsuario);
+            this.pnlSideBar.Controls.Add(this.btnPrincipal);
+            this.pnlSideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSideBar.Location = new System.Drawing.Point(0, 31);
+            this.pnlSideBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSideBar.Name = "pnlSideBar";
+            this.pnlSideBar.Size = new System.Drawing.Size(192, 630);
+            this.pnlSideBar.TabIndex = 3;
             // 
-            // pictureBox2
+            // pnlBody
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(354, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 98);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.Location = new System.Drawing.Point(192, 31);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(992, 630);
+            this.pnlBody.TabIndex = 4;
             // 
-            // label3
+            // btnAbrirIniciarSesion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 28);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "INICIO DE SESIÓN";
+            this.btnAbrirIniciarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAbrirIniciarSesion.Location = new System.Drawing.Point(890, 3);
+            this.btnAbrirIniciarSesion.Name = "btnAbrirIniciarSesion";
+            this.btnAbrirIniciarSesion.Size = new System.Drawing.Size(154, 23);
+            this.btnAbrirIniciarSesion.TabIndex = 4;
+            this.btnAbrirIniciarSesion.Text = "INICIAR SESION";
+            this.btnAbrirIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnAbrirIniciarSesion.Click += new System.EventHandler(this.btnAbrirIniciarSesion_Click);
             // 
-            // label1
+            // btnPrincipal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 25);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Contraseña";
+            this.btnPrincipal.Location = new System.Drawing.Point(9, 17);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(174, 42);
+            this.btnPrincipal.TabIndex = 0;
+            this.btnPrincipal.Text = "INICIO";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
             // 
-            // label4
+            // btnUsuario
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(82, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(214, 25);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Nombre de Usuario";
+            this.btnUsuario.Location = new System.Drawing.Point(9, 65);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(174, 41);
+            this.btnUsuario.TabIndex = 1;
+            this.btnUsuario.Text = "USUARIOS";
+            this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
-            // txtClave
+            // button2
             // 
-            this.txtClave.Location = new System.Drawing.Point(326, 228);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(203, 31);
-            this.txtClave.TabIndex = 10;
+            this.button2.Location = new System.Drawing.Point(9, 112);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(174, 41);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "CLIENTES";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txtUsuario
+            // button3
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(326, 188);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(203, 31);
-            this.txtUsuario.TabIndex = 9;
+            this.button3.Location = new System.Drawing.Point(9, 159);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(174, 40);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "CANCHAS";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnEntrar
+            // btnReserva
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnEntrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEntrar.Location = new System.Drawing.Point(250, 275);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(217, 46);
-            this.btnEntrar.TabIndex = 8;
-            this.btnEntrar.Text = "Iniciar Sesión";
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            this.btnReserva.Location = new System.Drawing.Point(9, 205);
+            this.btnReserva.Name = "btnReserva";
+            this.btnReserva.Size = new System.Drawing.Size(174, 40);
+            this.btnReserva.TabIndex = 4;
+            this.btnReserva.Text = "RESERVAS";
+            this.btnReserva.UseVisualStyleBackColor = true;
+            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(9, 251);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(174, 40);
+            this.btnReporte.TabIndex = 5;
+            this.btnReporte.Text = "REPORTES";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(9, 297);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(174, 43);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "CERRAR SESIÓN";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // pnlActive
+            // 
+            this.pnlActive.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlActive.Location = new System.Drawing.Point(165, 17);
+            this.pnlActive.Name = "pnlActive";
+            this.pnlActive.Size = new System.Drawing.Size(18, 42);
+            this.pnlActive.TabIndex = 7;
             // 
             // principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 417);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.pnlBody);
+            this.Controls.Add(this.pnlSideBar);
+            this.Controls.Add(this.pnlHeader);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "INICIAR SESIÓN";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Text = "MCC - ARENA";
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlSideBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtClave;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Panel pnlSideBar;
+        private System.Windows.Forms.Panel pnlBody;
+        private System.Windows.Forms.Button btnAbrirIniciarSesion;
+        private System.Windows.Forms.Button btnPrincipal;
+        private System.Windows.Forms.Panel pnlActive;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Button btnReserva;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUsuario;
     }
 }
 

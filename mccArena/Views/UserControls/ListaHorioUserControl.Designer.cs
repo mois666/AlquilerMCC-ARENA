@@ -51,9 +51,10 @@
             this.nombre,
             this.Apellidos,
             this.NumeroCelular});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 36);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(814, 447);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -86,9 +87,10 @@
             // 
             this.btnHorariosDispoibles.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnHorariosDispoibles.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnHorariosDispoibles.Location = new System.Drawing.Point(603, 60);
+            this.btnHorariosDispoibles.Location = new System.Drawing.Point(904, 83);
+            this.btnHorariosDispoibles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHorariosDispoibles.Name = "btnHorariosDispoibles";
-            this.btnHorariosDispoibles.Size = new System.Drawing.Size(132, 33);
+            this.btnHorariosDispoibles.Size = new System.Drawing.Size(198, 46);
             this.btnHorariosDispoibles.TabIndex = 4;
             this.btnHorariosDispoibles.Text = "Horarios Disponibles";
             this.btnHorariosDispoibles.UseVisualStyleBackColor = false;
@@ -97,9 +99,10 @@
             // 
             this.btnModificarHorario.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnModificarHorario.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnModificarHorario.Location = new System.Drawing.Point(603, 113);
+            this.btnModificarHorario.Location = new System.Drawing.Point(904, 156);
+            this.btnModificarHorario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificarHorario.Name = "btnModificarHorario";
-            this.btnModificarHorario.Size = new System.Drawing.Size(132, 33);
+            this.btnModificarHorario.Size = new System.Drawing.Size(198, 46);
             this.btnModificarHorario.TabIndex = 5;
             this.btnModificarHorario.Text = "Modificar Horario";
             this.btnModificarHorario.UseVisualStyleBackColor = false;
@@ -108,9 +111,10 @@
             // 
             this.btnEliminarHorario.BackColor = System.Drawing.Color.LightCoral;
             this.btnEliminarHorario.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnEliminarHorario.Location = new System.Drawing.Point(603, 166);
+            this.btnEliminarHorario.Location = new System.Drawing.Point(904, 230);
+            this.btnEliminarHorario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminarHorario.Name = "btnEliminarHorario";
-            this.btnEliminarHorario.Size = new System.Drawing.Size(132, 33);
+            this.btnEliminarHorario.Size = new System.Drawing.Size(198, 46);
             this.btnEliminarHorario.TabIndex = 6;
             this.btnEliminarHorario.Text = "Eliminar Horario";
             this.btnEliminarHorario.UseVisualStyleBackColor = false;
@@ -120,9 +124,10 @@
             // 
             this.btnReportes.BackColor = System.Drawing.Color.Khaki;
             this.btnReportes.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnReportes.Location = new System.Drawing.Point(603, 316);
+            this.btnReportes.Location = new System.Drawing.Point(904, 438);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(132, 33);
+            this.btnReportes.Size = new System.Drawing.Size(198, 46);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.UseVisualStyleBackColor = false;
@@ -130,15 +135,17 @@
             // 
             // ListaHorioUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnEliminarHorario);
             this.Controls.Add(this.btnModificarHorario);
             this.Controls.Add(this.btnHorariosDispoibles);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListaHorioUserControl";
-            this.Size = new System.Drawing.Size(767, 374);
+            this.Size = new System.Drawing.Size(992, 630);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

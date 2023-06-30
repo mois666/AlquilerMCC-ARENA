@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace mccArena.Views.UserControls
 {
-    public partial class ClienteUserControl : UserControl
+    public partial class CanchaUserControl : UserControl
     {
-        public ClienteUserControl()
+        public CanchaUserControl()
         {
             InitializeComponent();
         }

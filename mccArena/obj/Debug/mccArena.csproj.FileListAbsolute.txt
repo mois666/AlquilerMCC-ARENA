@@ -22,7 +22,6 @@ D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.ListaHorioUserControl.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.NuevoHorarioUserControl.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.PrinciaplUserControl.resources
-D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.Principal.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.UserControls.RegistroUserControl.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.GenerateResource.cache
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.CoreCompileInputs.cache
@@ -38,3 +37,8 @@ D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\System.Buffers.dll
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\MySql.Data.xml
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.csproj.CopyComplete
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.UsuarioUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.CanchaUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ClienteUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ReporteUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ReservasUserControl.resources

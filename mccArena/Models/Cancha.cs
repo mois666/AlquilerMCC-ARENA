@@ -14,5 +14,6 @@ namespace mccArena.Models
         public string Ubicacion { get; set; }
         public Usuario Usuario { get; set; }
 
+
     }
 }

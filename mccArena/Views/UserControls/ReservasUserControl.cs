@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mccArena.UserControls
+namespace mccArena.Views.UserControls
 {
-    public partial class Principal : Form
+    public partial class ReservasUserControl : UserControl
     {
-        public Principal()
+        public ReservasUserControl()
         {
             InitializeComponent();
         }

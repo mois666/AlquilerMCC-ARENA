@@ -17,7 +17,11 @@ namespace mccArena.Context
     {
         MySqlConnection conn = new MySqlConnection();
         string connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseCS"].ConnectionString;
-        public MySqlConnection establecerConexion()
+        protected MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(connectionString);
+        }
+        /*public MySqlConnection establecerConexion()
         {
             try
             {
@@ -31,7 +35,7 @@ namespace mccArena.Context
 
             }
           return conn;
-        }
-        
+        }*/
+
     }
 }

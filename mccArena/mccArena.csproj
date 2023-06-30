@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ModelCancha.cs" />
+    <Compile Include="Models\Cancha.cs" />
+    <Compile Include="Models\ConnectionToMySql.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +64,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\UserControls\CanchaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\CanchaUserControl.Designer.cs">
+      <DependentUpon>CanchaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ClienteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ClienteUserControl.Designer.cs">
+      <DependentUpon>ClienteUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\IniciarSesionUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,17 +100,29 @@
     <Compile Include="Views\UserControls\PrinciaplUserControl.Designer.cs">
       <DependentUpon>PrinciaplUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\UserControls\RegistroUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\UserControls\RegistroUserControl.Designer.cs">
       <DependentUpon>RegistroUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ReporteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ReporteUserControl.Designer.cs">
+      <DependentUpon>ReporteUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ReservasUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ReservasUserControl.Designer.cs">
+      <DependentUpon>ReservasUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\UsuarioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\UsuarioUserControl.Designer.cs">
+      <DependentUpon>UsuarioUserControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -108,6 +136,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\UserControls\CanchaUserControl.resx">
+      <DependentUpon>CanchaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ClienteUserControl.resx">
+      <DependentUpon>ClienteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\IniciarSesionUserControl.resx">
       <DependentUpon>IniciarSesionUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,11 +154,17 @@
     <EmbeddedResource Include="Views\UserControls\PrinciaplUserControl.resx">
       <DependentUpon>PrinciaplUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\RegistroUserControl.resx">
       <DependentUpon>RegistroUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ReporteUserControl.resx">
+      <DependentUpon>ReporteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ReservasUserControl.resx">
+      <DependentUpon>ReservasUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\UsuarioUserControl.resx">
+      <DependentUpon>UsuarioUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -139,9 +179,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Compile Include="Controllers\UsuarioController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

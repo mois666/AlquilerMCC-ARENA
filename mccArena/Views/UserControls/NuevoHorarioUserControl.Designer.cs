@@ -51,9 +51,10 @@
             this.nombre,
             this.Apellidos,
             this.NumeroCelular});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 15);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 21);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(723, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(1084, 393);
             this.dataGridView1.TabIndex = 1;
             // 
             // checkHorario
@@ -90,9 +91,10 @@
             // 
             this.btnPrincipal.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnPrincipal.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnPrincipal.Location = new System.Drawing.Point(426, 316);
+            this.btnPrincipal.Location = new System.Drawing.Point(639, 438);
+            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(132, 33);
+            this.btnPrincipal.Size = new System.Drawing.Size(198, 46);
             this.btnPrincipal.TabIndex = 5;
             this.btnPrincipal.Text = "Principal";
             this.btnPrincipal.UseVisualStyleBackColor = false;
@@ -101,22 +103,25 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightGreen;
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(592, 316);
+            this.button1.Location = new System.Drawing.Point(888, 438);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 33);
+            this.button1.Size = new System.Drawing.Size(198, 46);
             this.button1.TabIndex = 6;
             this.button1.Text = "Reservar Horario";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // NuevoHorarioUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NuevoHorarioUserControl";
-            this.Size = new System.Drawing.Size(767, 374);
+            this.Size = new System.Drawing.Size(992, 630);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
