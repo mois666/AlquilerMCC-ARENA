@@ -11,6 +11,7 @@ namespace mccArena.Controllers
 {
     public class UsuarioController
     {
+        public static string _sesionUsuario = "";
         ModelMCCArena _context = new ModelMCCArena();
         public List<Usuario> GetUsuarios()
         {
@@ -46,6 +47,19 @@ namespace mccArena.Controllers
         {
             _context.Usuario.Remove(usuario);
             return _context.SaveChanges() > 0;
+        }
+        //Inicio de sesión
+        public bool AutenticarUsuario(string usuario, string clave)
+        {
+            Usuario obj = new Usuario();
+            if (obj.VerificarUsuario(usuario, clave))
+            {
+                _sesionUsuario = usuario;
+                return true;
+            }
+            else
+                return false;
+           
         }
     }
 }

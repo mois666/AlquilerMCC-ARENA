@@ -11,6 +11,7 @@ using System.Windows.Forms;
 //refe
 using mccArena.UserControls;
 using mccArena.Views.UserControls;
+using mccArena.Controllers;
 
 namespace mccArena
 {
@@ -19,6 +20,23 @@ namespace mccArena
         public principal()
         {
             InitializeComponent();
+            string sesion = UsuarioController._sesionUsuario;
+            if(sesion == "")
+            {
+                IniciarSesionUserControl uch = new IniciarSesionUserControl();
+                addControlsToPanel(uch);
+            }
+            else
+            {
+                lblNombreUsuario.Text = sesion.ToUpper();
+                lblNombreUsuario.Visible = true;
+                btnAbrirIniciarSesion.Visible = false;
+                pnlSideBar.Visible = true;
+                moveSidePanel(btnPrincipal);
+                PrinciaplUserControl uch = new PrinciaplUserControl();
+                addControlsToPanel(uch);
+            }
+            
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -36,7 +54,7 @@ namespace mccArena
             pnlActive.Top = btn.Top;
             pnlActive.Height = btn.Height;
         }
-        private void addControlsToPanel(Control c)
+        public void addControlsToPanel(Control c)
         {
             c.Dock = DockStyle.Fill;
             pnlBody.Controls.Clear();
@@ -96,6 +114,13 @@ namespace mccArena
             ModelMCCArena db = new ModelMCCArena();
             var usuarios = db.Usuario.ToList();
             var canchas = db.Cancha.ToList();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            UsuarioController._sesionUsuario = "";
+            this.Refresh();
+            
         }
     }
 }

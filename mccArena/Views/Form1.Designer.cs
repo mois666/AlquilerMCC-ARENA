@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideBar = new System.Windows.Forms.Panel();
+            this.btnSincronizar = new System.Windows.Forms.Button();
             this.pnlActive = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnReporte = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
-            this.btnSincronizar = new System.Windows.Forms.Button();
+            this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSideBar.SuspendLayout();
@@ -53,6 +54,7 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pnlHeader.Controls.Add(this.lblNombreUsuario);
             this.pnlHeader.Controls.Add(this.btnAbrirIniciarSesion);
             this.pnlHeader.Controls.Add(this.dateTimePicker1);
             this.pnlHeader.Controls.Add(this.label2);
@@ -127,6 +129,17 @@
             this.pnlSideBar.Name = "pnlSideBar";
             this.pnlSideBar.Size = new System.Drawing.Size(192, 630);
             this.pnlSideBar.TabIndex = 3;
+            this.pnlSideBar.Visible = false;
+            // 
+            // btnSincronizar
+            // 
+            this.btnSincronizar.Location = new System.Drawing.Point(76, 593);
+            this.btnSincronizar.Name = "btnSincronizar";
+            this.btnSincronizar.Size = new System.Drawing.Size(113, 34);
+            this.btnSincronizar.TabIndex = 8;
+            this.btnSincronizar.Text = "Sincronizar";
+            this.btnSincronizar.UseVisualStyleBackColor = true;
+            this.btnSincronizar.Click += new System.EventHandler(this.btnSincronizar_Click);
             // 
             // pnlActive
             // 
@@ -144,6 +157,7 @@
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "CERRAR SESIÓN";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnReporte
             // 
@@ -214,15 +228,16 @@
             this.pnlBody.Size = new System.Drawing.Size(992, 630);
             this.pnlBody.TabIndex = 4;
             // 
-            // btnSincronizar
+            // lblNombreUsuario
             // 
-            this.btnSincronizar.Location = new System.Drawing.Point(76, 593);
-            this.btnSincronizar.Name = "btnSincronizar";
-            this.btnSincronizar.Size = new System.Drawing.Size(113, 34);
-            this.btnSincronizar.TabIndex = 8;
-            this.btnSincronizar.Text = "Sincronizar";
-            this.btnSincronizar.UseVisualStyleBackColor = true;
-            this.btnSincronizar.Click += new System.EventHandler(this.btnSincronizar_Click);
+            this.lblNombreUsuario.AutoSize = true;
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.Green;
+            this.lblNombreUsuario.Location = new System.Drawing.Point(964, 7);
+            this.lblNombreUsuario.Name = "lblNombreUsuario";
+            this.lblNombreUsuario.Size = new System.Drawing.Size(52, 18);
+            this.lblNombreUsuario.TabIndex = 5;
+            this.lblNombreUsuario.Text = "label1";
+            this.lblNombreUsuario.Visible = false;
             // 
             // principal
             // 
@@ -263,6 +278,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnSincronizar;
+        private System.Windows.Forms.Label lblNombreUsuario;
     }
 }
 
