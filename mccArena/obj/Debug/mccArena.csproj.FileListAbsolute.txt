@@ -42,3 +42,7 @@ D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ClienteUserControl.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ReporteUserControl.resources
 D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\obj\Debug\mccArena.Views.UserControls.ReservasUserControl.resources
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\EntityFramework.dll
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\EntityFramework.SqlServer.dll
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\EntityFramework.xml
+D:\sem1_23\ACTUALIZACION-TECNOLOGICA\ProyectoReservaCacha\mccArena\mccArena\bin\Debug\EntityFramework.SqlServer.xml

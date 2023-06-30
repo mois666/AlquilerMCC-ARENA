@@ -90,5 +90,12 @@ namespace mccArena
             ReporteUserControl uch = new ReporteUserControl();
             addControlsToPanel(uch);
         }
+
+        private void btnSincronizar_Click(object sender, EventArgs e)
+        {
+            ModelMCCArena db = new ModelMCCArena();
+            var usuarios = db.Usuario.ToList();
+            var canchas = db.Cancha.ToList();
+        }
     }
 }

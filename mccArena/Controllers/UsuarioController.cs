@@ -11,38 +11,41 @@ namespace mccArena.Controllers
 {
     public class UsuarioController
     {
-        ModelCancha _context = new ModelCancha();
-        /*public List<Usuario> GetUsuarios()
+        ModelMCCArena _context = new ModelMCCArena();
+        public List<Usuario> GetUsuarios()
         {
             return _context.Usuario.ToList();
 
         }
-        public List<Usuario> Buscar(string par)
+        public List<Usuario> Search(string par)
         {
             if (String.IsNullOrEmpty(par))
             {
                 return GetUsuarios();
             }else
             {
-                return GetUsuarios();//_context.Usuario.Where(u => u.Par == par).ToList();)
+                //return _context.Usuario.Where(x => x.Cuenta.Contains(par)||x.Cuenta.Contains(par))
+                return _context.Usuario.Where(x => x.Cuenta.Contains(par))
+                    .ToList();
             }
         }
-        public bool Create(Usuario. usuario)
+        public bool Create(Usuario usuario)
         {
-            UserControls item = _context.Usuario.Add(user);
+            _context.Usuario.Add(usuario);
             return _context.SaveChanges() > 0;
 
         }
         public bool Update(Usuario usuario)
         {
             _context.Usuario.Attach(usuario);
-            _context.Entry(usuario).State = EntityState.Modified
+            _context.Entry(usuario).State = (System.Data.Entity.EntityState)EntityState.Modified;
+            //_context.Entry(usuario).State = EntityState.Modified;
             return _context.SaveChanges() > 0;
         }
         public bool Delete(Usuario usuario)
         {
-            _context.Usuario.Remove(user);
+            _context.Usuario.Remove(usuario);
             return _context.SaveChanges() > 0;
-        }*/
+        }
     }
 }

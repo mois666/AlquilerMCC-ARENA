@@ -16,5 +16,11 @@ namespace mccArena.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            principal obj = new principal();
+            obj.Visible = true;
+        }
     }
 }
