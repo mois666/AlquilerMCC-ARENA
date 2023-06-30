@@ -70,6 +70,9 @@
   <ItemGroup>
     <Compile Include="Context\ModelCancha.cs" />
     <Compile Include="Context\ModelMCCArena.cs" />
+    <Compile Include="Controllers\CanchaController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Models\Cancha.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Reserva.cs" />
@@ -186,6 +189,9 @@
       <DependentUpon>UsuarioUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\mccArena.Models.Cancha.datasource" />
+    <None Include="Properties\DataSources\mccArena.Models.Cliente.datasource" />
+    <None Include="Properties\DataSources\mccArena.Models.Reserva.datasource" />
     <None Include="Properties\DataSources\mccArena.Models.Usuario.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
