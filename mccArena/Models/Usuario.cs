@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace mccArena.Models
 {
-    internal class Usuario
+    public class Usuario
     {
+        public int Id { get; set; }
+        public string Cuenta { get; set; }
+        public string Clave { get; set;}
+
+        public List<Cancha> canchas { get; set; }
     }
 }

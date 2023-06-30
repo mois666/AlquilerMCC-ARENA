@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.Configuration;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using mccArena.Models;
+using System.Data.EntityClient;
+using System.ComponentModel.Design;
+using System.Data.Common.CommandTrees;
 
 namespace mccArena.Context
 {
@@ -28,5 +32,6 @@ namespace mccArena.Context
             }
           return conn;
         }
+        
     }
 }
