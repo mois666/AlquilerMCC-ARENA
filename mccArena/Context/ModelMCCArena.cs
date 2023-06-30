@@ -14,6 +14,8 @@ namespace mccArena.Context
         }
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Cancha> Cancha { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Reserva> Reserva { get; set; }
 
         /*protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

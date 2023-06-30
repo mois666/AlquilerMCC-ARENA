@@ -23,7 +23,8 @@ namespace mccArena.Models
         public string Cuenta { get; set; }
         [Required]
         public string Clave { get; set;}
-
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
         public List<Cancha> canchas { get; set; }
 
         

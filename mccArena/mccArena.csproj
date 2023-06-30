@@ -71,7 +71,8 @@
     <Compile Include="Context\ModelCancha.cs" />
     <Compile Include="Context\ModelMCCArena.cs" />
     <Compile Include="Models\Cancha.cs" />
-    <Compile Include="Models\ConnectionToMySql.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Reserva.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>

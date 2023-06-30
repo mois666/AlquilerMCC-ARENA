@@ -21,6 +21,8 @@ namespace mccArena
         {
             InitializeComponent();
             string sesion = UsuarioController._sesionUsuario;
+            //pnlSideBar.Visible = true;
+            
             if(sesion == "")
             {
                 IniciarSesionUserControl uch = new IniciarSesionUserControl();
@@ -36,7 +38,7 @@ namespace mccArena
                 PrinciaplUserControl uch = new PrinciaplUserControl();
                 addControlsToPanel(uch);
             }
-            
+
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -114,12 +116,14 @@ namespace mccArena
             ModelMCCArena db = new ModelMCCArena();
             var usuarios = db.Usuario.ToList();
             var canchas = db.Cancha.ToList();
+            var clientes = db.Cliente.ToList();
+            var reservas = db.Reserva.ToList();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             UsuarioController._sesionUsuario = "";
-            this.Refresh();
+            this.Dispose();
             
         }
     }
