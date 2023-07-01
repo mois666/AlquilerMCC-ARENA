@@ -269,22 +269,24 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.Location = new System.Drawing.Point(57, 198);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(128, 45);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Green;
             this.btnGuardar.Location = new System.Drawing.Point(57, 147);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(128, 45);
             this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // claveTextBox
@@ -330,32 +332,35 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnNuevo.Location = new System.Drawing.Point(17, 37);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(128, 45);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.Peru;
             this.btnEditar.Location = new System.Drawing.Point(151, 37);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(128, 45);
             this.btnEditar.TabIndex = 8;
             this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Location = new System.Drawing.Point(285, 37);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(128, 45);
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // usuarioBindingSource

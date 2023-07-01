@@ -37,8 +37,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUsuarios = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblUsuarios = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -86,30 +86,33 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Location = new System.Drawing.Point(723, 186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 46);
             this.button1.TabIndex = 3;
             this.button1.Text = "HORARIOS DISPONIBLES";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Peru;
             this.button2.Location = new System.Drawing.Point(723, 251);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(222, 46);
             this.button2.TabIndex = 4;
             this.button2.Text = "MODIFICAR HORARIO";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.Location = new System.Drawing.Point(723, 303);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 46);
             this.button3.TabIndex = 5;
             this.button3.Text = "ELIMINAR HORARIO";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // btnBuscar
             // 
@@ -138,6 +141,16 @@
             this.panel1.Size = new System.Drawing.Size(154, 126);
             this.panel1.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(44, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 73);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "2";
+            // 
             // lblUsuarios
             // 
             this.lblUsuarios.AutoSize = true;
@@ -147,16 +160,6 @@
             this.lblUsuarios.Size = new System.Drawing.Size(93, 18);
             this.lblUsuarios.TabIndex = 0;
             this.lblUsuarios.Text = "USUARIOS";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 73);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "3";
             // 
             // panel2
             // 
@@ -238,9 +241,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(44, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 73);
+            this.label6.Size = new System.Drawing.Size(104, 73);
             this.label6.TabIndex = 1;
-            this.label6.Text = "3";
+            this.label6.Text = "11";
             // 
             // label7
             // 

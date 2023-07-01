@@ -80,7 +80,7 @@
             // apellidoLabel
             // 
             apellidoLabel.AutoSize = true;
-            apellidoLabel.Location = new System.Drawing.Point(44, 68);
+            apellidoLabel.Location = new System.Drawing.Point(44, 100);
             apellidoLabel.Name = "apellidoLabel";
             apellidoLabel.Size = new System.Drawing.Size(63, 18);
             apellidoLabel.TabIndex = 0;
@@ -98,7 +98,7 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(41, 96);
+            nombreLabel.Location = new System.Drawing.Point(41, 68);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(66, 18);
             nombreLabel.TabIndex = 4;
@@ -107,7 +107,7 @@
             // teleefonoLabel
             // 
             teleefonoLabel.AutoSize = true;
-            teleefonoLabel.Location = new System.Drawing.Point(29, 126);
+            teleefonoLabel.Location = new System.Drawing.Point(37, 125);
             teleefonoLabel.Name = "teleefonoLabel";
             teleefonoLabel.Size = new System.Drawing.Size(70, 18);
             teleefonoLabel.TabIndex = 6;
@@ -316,28 +316,30 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar.Location = new System.Drawing.Point(166, 215);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(128, 45);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Green;
             this.btnGuardar.Location = new System.Drawing.Point(32, 215);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(128, 45);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // apellidoTextBox
             // 
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Apellido", true));
-            this.apellidoTextBox.Location = new System.Drawing.Point(125, 63);
+            this.apellidoTextBox.Location = new System.Drawing.Point(125, 95);
             this.apellidoTextBox.Name = "apellidoTextBox";
             this.apellidoTextBox.Size = new System.Drawing.Size(169, 24);
             this.apellidoTextBox.TabIndex = 1;
@@ -353,7 +355,7 @@
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(125, 93);
+            this.nombreTextBox.Location = new System.Drawing.Point(125, 65);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(169, 24);
             this.nombreTextBox.TabIndex = 5;
@@ -361,39 +363,42 @@
             // teleefonoTextBox
             // 
             this.teleefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Teleefono", true));
-            this.teleefonoTextBox.Location = new System.Drawing.Point(125, 123);
+            this.teleefonoTextBox.Location = new System.Drawing.Point(125, 125);
             this.teleefonoTextBox.Name = "teleefonoTextBox";
             this.teleefonoTextBox.Size = new System.Drawing.Size(169, 24);
             this.teleefonoTextBox.TabIndex = 7;
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Location = new System.Drawing.Point(300, 65);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(128, 45);
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.Peru;
             this.btnEditar.Location = new System.Drawing.Point(166, 65);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(128, 45);
             this.btnEditar.TabIndex = 18;
             this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnNuevo.Location = new System.Drawing.Point(32, 65);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(128, 45);
             this.btnNuevo.TabIndex = 17;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnBuscar

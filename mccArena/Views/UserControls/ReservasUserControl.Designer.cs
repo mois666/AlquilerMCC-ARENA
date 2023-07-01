@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservasUserControl));
             System.Windows.Forms.Label fechaLabel;
             System.Windows.Forms.Label horaFinalLabel;
             System.Windows.Forms.Label horaInicioLabel;
@@ -42,47 +41,48 @@
             System.Windows.Forms.Label idLabel2;
             System.Windows.Forms.Label nombreLabel1;
             System.Windows.Forms.Label teleefonoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservasUserControl));
             this.reservaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.reservaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.reservaDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.pnlFormulario = new System.Windows.Forms.Panel();
-            this.fechaTextBox = new System.Windows.Forms.TextBox();
-            this.horaFinalTextBox = new System.Windows.Forms.TextBox();
-            this.horaInicioTextBox = new System.Windows.Forms.TextBox();
-            this.idTextBox = new System.Windows.Forms.TextBox();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.idTextBox1 = new System.Windows.Forms.TextBox();
-            this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.ubicacionTextBox = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.apellidoTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox2 = new System.Windows.Forms.TextBox();
             this.nombreTextBox1 = new System.Windows.Forms.TextBox();
             this.teleefonoTextBox = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.idTextBox1 = new System.Windows.Forms.TextBox();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.ubicacionTextBox = new System.Windows.Forms.TextBox();
+            this.fechaTextBox = new System.Windows.Forms.TextBox();
+            this.horaFinalTextBox = new System.Windows.Forms.TextBox();
+            this.horaInicioTextBox = new System.Windows.Forms.TextBox();
+            this.idTextBox = new System.Windows.Forms.TextBox();
             fechaLabel = new System.Windows.Forms.Label();
             horaFinalLabel = new System.Windows.Forms.Label();
             horaInicioLabel = new System.Windows.Forms.Label();
@@ -97,10 +97,118 @@
             teleefonoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).BeginInit();
             this.reservaBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).BeginInit();
             this.pnlFormulario.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // fechaLabel
+            // 
+            fechaLabel.AutoSize = true;
+            fechaLabel.Location = new System.Drawing.Point(57, 97);
+            fechaLabel.Name = "fechaLabel";
+            fechaLabel.Size = new System.Drawing.Size(53, 18);
+            fechaLabel.TabIndex = 0;
+            fechaLabel.Text = "Fecha:";
+            // 
+            // horaFinalLabel
+            // 
+            horaFinalLabel.AutoSize = true;
+            horaFinalLabel.Location = new System.Drawing.Point(57, 67);
+            horaFinalLabel.Name = "horaFinalLabel";
+            horaFinalLabel.Size = new System.Drawing.Size(80, 18);
+            horaFinalLabel.TabIndex = 2;
+            horaFinalLabel.Text = "Hora Final:";
+            // 
+            // horaInicioLabel
+            // 
+            horaInicioLabel.AutoSize = true;
+            horaInicioLabel.Location = new System.Drawing.Point(57, 37);
+            horaInicioLabel.Name = "horaInicioLabel";
+            horaInicioLabel.Size = new System.Drawing.Size(83, 18);
+            horaInicioLabel.TabIndex = 4;
+            horaInicioLabel.Text = "Hora Inicio:";
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(57, 7);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(23, 18);
+            idLabel.TabIndex = 6;
+            idLabel.Text = "Id:";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(57, 161);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(87, 18);
+            descriptionLabel.TabIndex = 8;
+            descriptionLabel.Text = "Description:";
+            // 
+            // idLabel1
+            // 
+            idLabel1.AutoSize = true;
+            idLabel1.Location = new System.Drawing.Point(57, 191);
+            idLabel1.Name = "idLabel1";
+            idLabel1.Size = new System.Drawing.Size(23, 18);
+            idLabel1.TabIndex = 10;
+            idLabel1.Text = "Id:";
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(57, 221);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(66, 18);
+            nombreLabel.TabIndex = 12;
+            nombreLabel.Text = "Nombre:";
+            // 
+            // ubicacionLabel
+            // 
+            ubicacionLabel.AutoSize = true;
+            ubicacionLabel.Location = new System.Drawing.Point(57, 251);
+            ubicacionLabel.Name = "ubicacionLabel";
+            ubicacionLabel.Size = new System.Drawing.Size(78, 18);
+            ubicacionLabel.TabIndex = 14;
+            ubicacionLabel.Text = "Ubicacion:";
+            // 
+            // apellidoLabel
+            // 
+            apellidoLabel.AutoSize = true;
+            apellidoLabel.Location = new System.Drawing.Point(57, 375);
+            apellidoLabel.Name = "apellidoLabel";
+            apellidoLabel.Size = new System.Drawing.Size(63, 18);
+            apellidoLabel.TabIndex = 16;
+            apellidoLabel.Text = "Apellido:";
+            // 
+            // idLabel2
+            // 
+            idLabel2.AutoSize = true;
+            idLabel2.Location = new System.Drawing.Point(57, 315);
+            idLabel2.Name = "idLabel2";
+            idLabel2.Size = new System.Drawing.Size(23, 18);
+            idLabel2.TabIndex = 18;
+            idLabel2.Text = "Id:";
+            // 
+            // nombreLabel1
+            // 
+            nombreLabel1.AutoSize = true;
+            nombreLabel1.Location = new System.Drawing.Point(57, 345);
+            nombreLabel1.Name = "nombreLabel1";
+            nombreLabel1.Size = new System.Drawing.Size(66, 18);
+            nombreLabel1.TabIndex = 20;
+            nombreLabel1.Text = "Nombre:";
+            // 
+            // teleefonoLabel
+            // 
+            teleefonoLabel.AutoSize = true;
+            teleefonoLabel.Location = new System.Drawing.Point(57, 405);
+            teleefonoLabel.Name = "teleefonoLabel";
+            teleefonoLabel.Size = new System.Drawing.Size(78, 18);
+            teleefonoLabel.TabIndex = 22;
+            teleefonoLabel.Text = "Teleefono:";
             // 
             // reservaBindingNavigator
             // 
@@ -131,6 +239,35 @@
             this.reservaBindingNavigator.Size = new System.Drawing.Size(1012, 25);
             this.reservaBindingNavigator.TabIndex = 0;
             this.reservaBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // reservaBindingSource
+            // 
+            this.reservaBindingSource.DataSource = typeof(mccArena.Models.Reserva);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -165,16 +302,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -197,26 +327,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // reservaBindingNavigatorSaveItem
             // 
@@ -246,55 +358,6 @@
             this.reservaDataGridView.ReadOnly = true;
             this.reservaDataGridView.Size = new System.Drawing.Size(653, 381);
             this.reservaDataGridView.TabIndex = 1;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(294, 37);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(128, 45);
-            this.btnEliminar.TabIndex = 14;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(160, 37);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(128, 45);
-            this.btnEditar.TabIndex = 13;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(26, 37);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(128, 45);
-            this.btnNuevo.TabIndex = 12;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(436, 104);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 11;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(195, 103);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(225, 24);
-            this.txtBuscar.TabIndex = 10;
-            // 
-            // reservaBindingSource
-            // 
-            this.reservaBindingSource.DataSource = typeof(mccArena.Models.Reserva);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -338,6 +401,54 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.Location = new System.Drawing.Point(294, 37);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(128, 45);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Peru;
+            this.btnEditar.Location = new System.Drawing.Point(160, 37);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(128, 45);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnNuevo.Location = new System.Drawing.Point(26, 37);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(128, 45);
+            this.btnNuevo.TabIndex = 12;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(436, 104);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(195, 103);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(225, 24);
+            this.txtBuscar.TabIndex = 10;
+            // 
             // pnlFormulario
             // 
             this.pnlFormulario.Controls.Add(this.btnCancelar);
@@ -371,201 +482,51 @@
             this.pnlFormulario.Size = new System.Drawing.Size(336, 528);
             this.pnlFormulario.TabIndex = 15;
             // 
-            // fechaLabel
+            // btnCancelar
             // 
-            fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(57, 7);
-            fechaLabel.Name = "fechaLabel";
-            fechaLabel.Size = new System.Drawing.Size(53, 18);
-            fechaLabel.TabIndex = 0;
-            fechaLabel.Text = "Fecha:";
+            this.btnCancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelar.Location = new System.Drawing.Point(172, 460);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(128, 45);
+            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
-            // fechaTextBox
+            // btnGuardar
             // 
-            this.fechaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Fecha", true));
-            this.fechaTextBox.Location = new System.Drawing.Point(146, 4);
-            this.fechaTextBox.Name = "fechaTextBox";
-            this.fechaTextBox.Size = new System.Drawing.Size(100, 24);
-            this.fechaTextBox.TabIndex = 1;
-            // 
-            // horaFinalLabel
-            // 
-            horaFinalLabel.AutoSize = true;
-            horaFinalLabel.Location = new System.Drawing.Point(57, 37);
-            horaFinalLabel.Name = "horaFinalLabel";
-            horaFinalLabel.Size = new System.Drawing.Size(80, 18);
-            horaFinalLabel.TabIndex = 2;
-            horaFinalLabel.Text = "Hora Final:";
-            // 
-            // horaFinalTextBox
-            // 
-            this.horaFinalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "HoraFinal", true));
-            this.horaFinalTextBox.Location = new System.Drawing.Point(146, 34);
-            this.horaFinalTextBox.Name = "horaFinalTextBox";
-            this.horaFinalTextBox.Size = new System.Drawing.Size(100, 24);
-            this.horaFinalTextBox.TabIndex = 3;
-            // 
-            // horaInicioLabel
-            // 
-            horaInicioLabel.AutoSize = true;
-            horaInicioLabel.Location = new System.Drawing.Point(57, 67);
-            horaInicioLabel.Name = "horaInicioLabel";
-            horaInicioLabel.Size = new System.Drawing.Size(83, 18);
-            horaInicioLabel.TabIndex = 4;
-            horaInicioLabel.Text = "Hora Inicio:";
-            // 
-            // horaInicioTextBox
-            // 
-            this.horaInicioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "HoraInicio", true));
-            this.horaInicioTextBox.Location = new System.Drawing.Point(146, 64);
-            this.horaInicioTextBox.Name = "horaInicioTextBox";
-            this.horaInicioTextBox.Size = new System.Drawing.Size(100, 24);
-            this.horaInicioTextBox.TabIndex = 5;
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(57, 97);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(23, 18);
-            idLabel.TabIndex = 6;
-            idLabel.Text = "Id:";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(146, 94);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 24);
-            this.idTextBox.TabIndex = 7;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(57, 161);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(87, 18);
-            descriptionLabel.TabIndex = 8;
-            descriptionLabel.Text = "Description:";
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(150, 158);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(100, 24);
-            this.descriptionTextBox.TabIndex = 9;
-            // 
-            // idLabel1
-            // 
-            idLabel1.AutoSize = true;
-            idLabel1.Location = new System.Drawing.Point(57, 191);
-            idLabel1.Name = "idLabel1";
-            idLabel1.Size = new System.Drawing.Size(23, 18);
-            idLabel1.TabIndex = 10;
-            idLabel1.Text = "Id:";
-            // 
-            // idTextBox1
-            // 
-            this.idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Id", true));
-            this.idTextBox1.Location = new System.Drawing.Point(150, 188);
-            this.idTextBox1.Name = "idTextBox1";
-            this.idTextBox1.Size = new System.Drawing.Size(100, 24);
-            this.idTextBox1.TabIndex = 11;
-            // 
-            // nombreLabel
-            // 
-            nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(57, 221);
-            nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(66, 18);
-            nombreLabel.TabIndex = 12;
-            nombreLabel.Text = "Nombre:";
-            // 
-            // nombreTextBox
-            // 
-            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(150, 218);
-            this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(100, 24);
-            this.nombreTextBox.TabIndex = 13;
-            // 
-            // ubicacionLabel
-            // 
-            ubicacionLabel.AutoSize = true;
-            ubicacionLabel.Location = new System.Drawing.Point(57, 251);
-            ubicacionLabel.Name = "ubicacionLabel";
-            ubicacionLabel.Size = new System.Drawing.Size(78, 18);
-            ubicacionLabel.TabIndex = 14;
-            ubicacionLabel.Text = "Ubicacion:";
-            // 
-            // ubicacionTextBox
-            // 
-            this.ubicacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Ubicacion", true));
-            this.ubicacionTextBox.Location = new System.Drawing.Point(150, 248);
-            this.ubicacionTextBox.Name = "ubicacionTextBox";
-            this.ubicacionTextBox.Size = new System.Drawing.Size(100, 24);
-            this.ubicacionTextBox.TabIndex = 15;
-            // 
-            // apellidoLabel
-            // 
-            apellidoLabel.AutoSize = true;
-            apellidoLabel.Location = new System.Drawing.Point(57, 315);
-            apellidoLabel.Name = "apellidoLabel";
-            apellidoLabel.Size = new System.Drawing.Size(63, 18);
-            apellidoLabel.TabIndex = 16;
-            apellidoLabel.Text = "Apellido:";
+            this.btnGuardar.BackColor = System.Drawing.Color.Green;
+            this.btnGuardar.Location = new System.Drawing.Point(38, 460);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(128, 45);
+            this.btnGuardar.TabIndex = 24;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // apellidoTextBox
             // 
             this.apellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cliente.Apellido", true));
-            this.apellidoTextBox.Location = new System.Drawing.Point(141, 312);
+            this.apellidoTextBox.Location = new System.Drawing.Point(141, 372);
             this.apellidoTextBox.Name = "apellidoTextBox";
             this.apellidoTextBox.Size = new System.Drawing.Size(100, 24);
             this.apellidoTextBox.TabIndex = 17;
             // 
-            // idLabel2
-            // 
-            idLabel2.AutoSize = true;
-            idLabel2.Location = new System.Drawing.Point(57, 345);
-            idLabel2.Name = "idLabel2";
-            idLabel2.Size = new System.Drawing.Size(23, 18);
-            idLabel2.TabIndex = 18;
-            idLabel2.Text = "Id:";
-            // 
             // idTextBox2
             // 
             this.idTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cliente.Id", true));
-            this.idTextBox2.Location = new System.Drawing.Point(141, 342);
+            this.idTextBox2.Location = new System.Drawing.Point(141, 312);
             this.idTextBox2.Name = "idTextBox2";
             this.idTextBox2.Size = new System.Drawing.Size(100, 24);
             this.idTextBox2.TabIndex = 19;
             // 
-            // nombreLabel1
-            // 
-            nombreLabel1.AutoSize = true;
-            nombreLabel1.Location = new System.Drawing.Point(57, 375);
-            nombreLabel1.Name = "nombreLabel1";
-            nombreLabel1.Size = new System.Drawing.Size(66, 18);
-            nombreLabel1.TabIndex = 20;
-            nombreLabel1.Text = "Nombre:";
-            // 
             // nombreTextBox1
             // 
             this.nombreTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cliente.Nombre", true));
-            this.nombreTextBox1.Location = new System.Drawing.Point(141, 372);
+            this.nombreTextBox1.Location = new System.Drawing.Point(141, 342);
             this.nombreTextBox1.Name = "nombreTextBox1";
             this.nombreTextBox1.Size = new System.Drawing.Size(100, 24);
             this.nombreTextBox1.TabIndex = 21;
-            // 
-            // teleefonoLabel
-            // 
-            teleefonoLabel.AutoSize = true;
-            teleefonoLabel.Location = new System.Drawing.Point(57, 405);
-            teleefonoLabel.Name = "teleefonoLabel";
-            teleefonoLabel.Size = new System.Drawing.Size(78, 18);
-            teleefonoLabel.TabIndex = 22;
-            teleefonoLabel.Text = "Teleefono:";
             // 
             // teleefonoTextBox
             // 
@@ -575,25 +536,69 @@
             this.teleefonoTextBox.Size = new System.Drawing.Size(100, 24);
             this.teleefonoTextBox.TabIndex = 23;
             // 
-            // btnCancelar
+            // descriptionTextBox
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(172, 460);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(128, 45);
-            this.btnCancelar.TabIndex = 25;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Description", true));
+            this.descriptionTextBox.Location = new System.Drawing.Point(150, 158);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(100, 24);
+            this.descriptionTextBox.TabIndex = 9;
             // 
-            // btnGuardar
+            // idTextBox1
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(38, 460);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(128, 45);
-            this.btnGuardar.TabIndex = 24;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
+            this.idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Id", true));
+            this.idTextBox1.Location = new System.Drawing.Point(150, 188);
+            this.idTextBox1.Name = "idTextBox1";
+            this.idTextBox1.Size = new System.Drawing.Size(100, 24);
+            this.idTextBox1.TabIndex = 11;
+            // 
+            // nombreTextBox
+            // 
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(150, 218);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(100, 24);
+            this.nombreTextBox.TabIndex = 13;
+            // 
+            // ubicacionTextBox
+            // 
+            this.ubicacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Cancha.Ubicacion", true));
+            this.ubicacionTextBox.Location = new System.Drawing.Point(150, 248);
+            this.ubicacionTextBox.Name = "ubicacionTextBox";
+            this.ubicacionTextBox.Size = new System.Drawing.Size(100, 24);
+            this.ubicacionTextBox.TabIndex = 15;
+            // 
+            // fechaTextBox
+            // 
+            this.fechaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Fecha", true));
+            this.fechaTextBox.Location = new System.Drawing.Point(146, 94);
+            this.fechaTextBox.Name = "fechaTextBox";
+            this.fechaTextBox.Size = new System.Drawing.Size(100, 24);
+            this.fechaTextBox.TabIndex = 1;
+            // 
+            // horaFinalTextBox
+            // 
+            this.horaFinalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "HoraFinal", true));
+            this.horaFinalTextBox.Location = new System.Drawing.Point(146, 64);
+            this.horaFinalTextBox.Name = "horaFinalTextBox";
+            this.horaFinalTextBox.Size = new System.Drawing.Size(100, 24);
+            this.horaFinalTextBox.TabIndex = 3;
+            // 
+            // horaInicioTextBox
+            // 
+            this.horaInicioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "HoraInicio", true));
+            this.horaInicioTextBox.Location = new System.Drawing.Point(146, 34);
+            this.horaInicioTextBox.Name = "horaInicioTextBox";
+            this.horaInicioTextBox.Size = new System.Drawing.Size(100, 24);
+            this.horaInicioTextBox.TabIndex = 5;
+            // 
+            // idTextBox
+            // 
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(146, 4);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(100, 24);
+            this.idTextBox.TabIndex = 7;
             // 
             // ReservasUserControl
             // 
@@ -614,8 +619,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingNavigator)).EndInit();
             this.reservaBindingNavigator.ResumeLayout(false);
             this.reservaBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservaDataGridView)).EndInit();
             this.pnlFormulario.ResumeLayout(false);
             this.pnlFormulario.PerformLayout();
             this.ResumeLayout(false);
