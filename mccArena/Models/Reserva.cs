@@ -12,9 +12,9 @@ namespace mccArena.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public DateTime Fecha { get; set; }
-        public DateTime HoraInicio { get; set; }
-        public DateTime HoraFinal { get; set; }
+        public string Fecha { get; set; }
+        public string HoraInicio { get; set; }
+        public string HoraFinal { get; set; }
 
         public Cancha Cancha { get; set; } // id cancha
         public Cliente Cliente { get; set; }// id cliente

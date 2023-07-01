@@ -15,6 +15,17 @@ namespace mccArena.UserControls
         public PrinciaplUserControl()
         {
             InitializeComponent();
+
+            dgvHorasDisponibles.Rows.Add("1", "08:00");
+            dgvHorasDisponibles.Rows.Add("2", "09:00");
+            dgvHorasDisponibles.Rows.Add("3", "10:00");
+            dgvHorasDisponibles.Rows.Add("4", "12:00");
+            dgvHorasDisponibles.Rows.Add("5", "14:00");
+            dgvHorasDisponibles.Rows.Add("6", "15:00");
+            dgvHorasDisponibles.Rows.Add("7", "16:00");
+            dgvHorasDisponibles.Rows.Add("8", "17:00");
+            dgvHorasDisponibles.Rows.Add("9", "18:00");
+            dgvHorasDisponibles.Rows.Add("10", "23:00");
         }
     }
 }

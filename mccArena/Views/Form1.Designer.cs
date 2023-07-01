@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.btnAbrirIniciarSesion = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
             this.pnlBody = new System.Windows.Forms.Panel();
-            this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSideBar.SuspendLayout();
@@ -65,6 +65,17 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1184, 31);
             this.pnlHeader.TabIndex = 2;
+            // 
+            // lblNombreUsuario
+            // 
+            this.lblNombreUsuario.AutoSize = true;
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.Green;
+            this.lblNombreUsuario.Location = new System.Drawing.Point(964, 7);
+            this.lblNombreUsuario.Name = "lblNombreUsuario";
+            this.lblNombreUsuario.Size = new System.Drawing.Size(52, 18);
+            this.lblNombreUsuario.TabIndex = 5;
+            this.lblNombreUsuario.Text = "label1";
+            this.lblNombreUsuario.Visible = false;
             // 
             // btnAbrirIniciarSesion
             // 
@@ -228,17 +239,6 @@
             this.pnlBody.Size = new System.Drawing.Size(992, 630);
             this.pnlBody.TabIndex = 4;
             // 
-            // lblNombreUsuario
-            // 
-            this.lblNombreUsuario.AutoSize = true;
-            this.lblNombreUsuario.ForeColor = System.Drawing.Color.Green;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(964, 7);
-            this.lblNombreUsuario.Name = "lblNombreUsuario";
-            this.lblNombreUsuario.Size = new System.Drawing.Size(52, 18);
-            this.lblNombreUsuario.TabIndex = 5;
-            this.lblNombreUsuario.Text = "label1";
-            this.lblNombreUsuario.Visible = false;
-            // 
             // principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -250,6 +250,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MinimizeBox = false;
             this.Name = "principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MCC - ARENA";
